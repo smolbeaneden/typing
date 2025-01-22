@@ -2,12 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="icon"  href="/cat3.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="container">
+        <button id="newGame">New Game</button>
+      <div class="textbox"> <!-- ככה הטקסט לא משנה את גודל הריבוע-->
+         <div id ="text"></div>
+      </div>
+        <label><textarea id="inputArea" placeholder="Start typing here..."></textarea></label>
+
+
+      <div id="status" ></div>
+    </div>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/jquery.js"></script>
   </body>
 </html>
